@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Array</h1>
+
+<!-- ESCOPO VARIÁVEIS -->
+<!-- Global ou Local -->
+
+
+<script>
+
+// Variável Simples
+let fruta1 = "morango";
+let fruta2 = "banana";
+let fruta3 = "uva";
+let fruta4 = "melancia";
+alert(fruta2);
+
+// Array - Lista
+
+let frutas =  ['morango', 'banana', 'uva', 'melancia']; // 0,1,2,3
+alert(frutas[3]);
+
+// Adicionar um item na lista
+
+frutas.push('maçã') // Adicionou item 4 na lista
+alert(frutas[4]);
+
+// Remover Itens da Lista
+
+frutas.pop(); // Remove o ultimo item da lista
+
+// Remover Itens ESPECÍFICOS da Lista
+
+alert(frutas[1]) // banana
+frutas.splice(1, 1); // 1° Valor: Índice | 2° Valor: quantos itens remover dps da banana
+alert(frutas[1]) // uva
+alert(frutas[2]) // melancia
+
+</script>
+
+</body>
+</html>

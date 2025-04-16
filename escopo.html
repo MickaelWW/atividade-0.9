@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Função + Escopo</h1>
+
+<!-- ESCOPO VARIÁVEIS -->
+<!-- Global ou Local -->
+
+
+<script>
+
+let nome = 'Maria'; // Global
+
+function mostrarNome()
+{
+    let nome = 'João'; // Local
+    alert (nome); 
+}
+
+mostrarNome(); // Local (João)
+
+alert(nome); // Global (Maria)
+
+</script>
+
+</body>
+</html>
